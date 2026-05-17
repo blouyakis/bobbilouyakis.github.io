@@ -1,20 +1,3 @@
-
-// START Strikethrough list items
-const listItems = document.querySelectorAll("li");
-
-function toggleDone(e) {
-  if (!e.target.className) {
-    e.target.className = "done";
-  } else {
-    e.target.className = "";
-  }
-}
-
-listItems.forEach((item) => {
-  item.addEventListener("click", toggleDone);
-});
-// END Strikethrough list items
-
 // START Image Click to Transform 
 const myImage = document.querySelector("img");
 
@@ -27,6 +10,23 @@ myImage.addEventListener("click", () => {
   }
 });
 // END Image Click to Transform
+
+
+// START Strikethrough list items
+// const listItems = document.querySelectorAll("li");
+
+// function toggleDone(e) {
+//   if (!e.target.className) {
+//     e.target.className = "done";
+//   } else {
+//     e.target.className = "";
+//   }
+// }
+
+// listItems.forEach((item) => {
+//   item.addEventListener("click", toggleDone);
+// });
+// END Strikethrough list items
 
 // START Button = Welcome Message
 // let myButton = document.querySelector("button");
